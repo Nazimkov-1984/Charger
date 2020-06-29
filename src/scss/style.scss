@@ -33,12 +33,17 @@
 @import "mixins";
 @import "common";
 @import "./site_section/header";
+@import "./site_section/main_screen";
 @import "./site_section/about_us";
 @import "./site_section/services";
 @import "./site_section/project";
 @import "./site_section/testimonials";
 @import "./site_section/charger";
-@import "./site_section/footer.scss";
+@import "./site_section/footer";
+@import "./elements/buttons";
+@import "./elements/link-more";
+@import "./elements/navigation";
+
 
 p {
     font-family: $Playfair_display;

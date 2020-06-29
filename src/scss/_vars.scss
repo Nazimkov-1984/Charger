@@ -7,7 +7,7 @@ $Playfair_display: 'Playfair Display', sans-serif;
     $remSize: $size / 16px;
     @return #{$remSize}rem;
   }
-  $H1000: calcRem(150px);
+  $H1000: calcRem(100px);
   $H900: calcRem(80px);
   $H850: calcRem(66px);
   $H800: calcRem(60px);

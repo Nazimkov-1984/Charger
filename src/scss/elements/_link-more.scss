@@ -1,0 +1,14 @@
+.link-more {
+    @include text ($H550, 400, $color_text_gold);
+    font-family: $Proxima_nova;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color_line;
+    transition: all .7s;
+}
+
+@media (min-width: 1140px) {
+    .link-more:hover {
+        color:$color_text_white;
+        border-color: $color_text_white;
+    }
+  }

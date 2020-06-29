@@ -1,0 +1,25 @@
+$styles :navigation;
+.#{$styles}{
+    @include flex (center,center,row);
+
+&__list {
+    @include flex (center,center,row);
+}
+&__items {
+    margin-right: 36px;
+}
+&__items:last-child {
+    margin-right: 0px;
+}
+&__items__link {
+    @include text ($H50, 400, $color_text_white);
+    font-family: $Proxima_nova;
+    text-transform: uppercase;
+    transition: all .7s;
+}
+@media (min-width: 1140px) {
+    &__items__link:hover {
+        color:$color_text_gold;
+    }
+}
+}
