@@ -1,0 +1,46 @@
+
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('../assets/fonts/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../assets/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../assets/fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../assets/fonts/PlayfairDisplaySC-Bold.eot');
+	src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+		url('../assets/fonts/PlayfairDisplaySC-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/PlayfairDisplay-Bold.woff') format('woff'),
+		url('../assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../assets/fonts/PlayfairDisplay-Italic.eot');
+	src: local('Playfair Display-Italic'), local('PlayfairDisplay-Italic'),
+		url('../assets/fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/PlayfairDisplay-Italic.woff') format('woff'),
+		url('../assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+@import "vars";
+@import "mixins";
+@import "common";
+@import "./site_section/header";
+@import "./site_section/main_screen";
+@import "./site_section/about_us";
+@import "./site_section/services";
+@import "./site_section/project";
+@import "./site_section/testimonials";
+@import "./site_section/charger";
+@import "./site_section/footer.scss";
+
+p {
+    font-family: $Playfair_display;
+}
