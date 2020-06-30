@@ -1,0 +1,31 @@
+$styles :about-us;
+.#{$styles} {
+    @include flex (center, center, row);
+    padding: 86px 62px 86px 90px;
+    &__title {
+        @include text ($H600, 400, $color_text_black);
+        font-family: $Playfair_display;
+        margin-bottom: 24px;
+    }
+    &__subtitle {
+        @include text ($H100, 400, $color_text_black);
+        font-family: $Proxima_nova;  
+        margin-bottom: 24px;
+    }
+  &__image-wrapper {
+      width: 33%;
+      height: 300px;
+      background: url(/img/about_us/about.png) no-repeat center center;
+      background-size: cover;
+      margin-right: 90px;
+  }
+  &__text-wrapper {
+      width: 360px;
+  }
+  &__decor-wrapper {
+      width: 33%;
+  }
+}
+.button__about-us {
+    margin-bottom: 100px;
+}

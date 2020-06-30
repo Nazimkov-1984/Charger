@@ -1,0 +1,15 @@
+.button {
+    @include text ($H200, 400, $color_text_black);
+    text-decoration: none;
+   padding: 10px 64px 10px 64px;
+    text-transform: uppercase;
+    border: 2px solid $color_text_gold;
+    display: inline-block;
+    text-align: center;
+    transition: all .7s;
+}
+    @media (min-width: 1140px) {
+        .button:hover {
+            color:$color_text_gold;
+        }
+    }
