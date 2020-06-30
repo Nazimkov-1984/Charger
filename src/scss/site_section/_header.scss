@@ -34,26 +34,4 @@ $styles :header;
    &__menu {
        @include flex (center, center, row);
    }
-   &__title {
-       @include text ($H1000, 400, $color_text_gold);
-       font-family: $Playfair_display;
-       text-transform: uppercase;
-       text-align: center;
-   }
-}
-.intro {
-    height: 800px;
-    position: relative;
-    @include flex (center, center, row);
-}
-.intro__media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.intro__content {
-    z-index: 10;
 }

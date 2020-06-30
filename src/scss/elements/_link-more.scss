@@ -1,5 +1,5 @@
 .link-more {
-    @include text ($H550, 400, $color_text_gold);
+    @include text ($H500, 400, $color_text_gold);
     font-family: $Proxima_nova;
     text-transform: uppercase;
     border-bottom: 2px solid $color_line;
