@@ -1,0 +1,85 @@
+$styles : servises;
+.#{$styles} {
+    position: relative;
+    background: url(/img/services/bgimage.png) no-repeat center center;
+    padding-top: 117px;
+   
+    &__row-wrapper {
+        @include flex(space-around, center, row);
+       
+    }
+    &__row-wrapper-top {
+        @include flex(space-evenly, center, row);
+      margin-bottom: 54px;
+    
+    }
+    &__tab {
+        @include flex (center, stretch, row);
+        
+    }
+    &__title {
+        @include flex (center,center,row);
+        @include text ($H600, 400, $color_text_white);
+        font-family: $Playfair_display; 
+    }
+    &__link-more-top {
+        flex-basis: 20%;
+    }
+    //card style 
+    &__tab__item {
+        position: relative;
+        @include flex (center, center, column);
+        border: 1px solid $color_text_gold;
+        padding: 76px 52px 57px 52px;
+        margin-right: 25px;
+        width: 100%;  
+    }
+    &__tab__item:last-child{
+        margin-right: 0px;
+        background: url(/img/services/igor-ovsyannykov-267661@1X.png) no-repeat center center;
+        background-size: cover;
+    }
+    &__tab__item:first-child{
+        background: url(/img/services/trevor-bobyk-422783@1X.png) no-repeat center center;
+        background-size: cover;
+    }
+    &__tab__item:nth-child(2){
+        background: url(/img/services/semen-borisov-361522@1X.png) no-repeat;
+        background-size: cover;
+    }
+    &__tab__item:after { //затемнение картинок
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.8);
+            z-index: 2;
+    }
+    &__tab__item__title {
+        @include text($H520, 400, $color_text_white);
+        font-family: $Proxima_nova;
+        padding-bottom: 16px;
+        border-bottom: 2px solid $color_text_gold;
+        display: inline-block;
+        margin-bottom: 22px;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+    }
+    &__tab__item__text {
+        @include text($H100, 400, $color_text_white);
+        font-family: $Proxima_nova;
+        line-height: 25px;
+        margin-bottom: 37px;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+    }
+    &__link-more {
+        position: relative;
+        z-index: 5; 
+    }
+    //end card style
+}

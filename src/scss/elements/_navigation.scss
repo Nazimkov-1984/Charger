@@ -17,7 +17,7 @@ $styles :navigation;
     text-transform: uppercase;
     transition: all .7s;
 }
-@media (min-width: 1140px) {
+@media (min-width: 960px) {
     &__items__link:hover {
         color:$color_text_gold;
     }
