@@ -1,0 +1,30 @@
+$styles : testimonials;
+.#{$styles} {
+    @include flex (space-between, center, row);
+    padding-top: 374px;
+    padding-bottom: 220px;
+    background: url(/img/testimonials/background.png) no-repeat center center;
+    background-size: cover;
+    &__text{
+        @include text ($H600, 400, $color_text_white);
+        font-family: $Playfair_display; 
+        font-style: italic;
+        margin-bottom: 31px;
+        text-align: center;
+    }
+    &__title{
+        @include text ($H850, 400, $color_text_white);
+        font-family: $Proxima_nova; 
+        border-bottom: 2px solid $color_text_gold;
+        text-transform: uppercase;
+        padding-top: 35px;
+        text-align: center;
+        margin-bottom: 19px;
+    }
+    &__subtitle {
+        @include text ($H200, 400, $color_text_white);
+        font-family: $Proxima_nova; 
+
+    }
+
+}

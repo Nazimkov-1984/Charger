@@ -7,8 +7,7 @@ $styles : project;
         @include text ($H600, 400, $color_text_black);
         font-family: $Playfair_display; 
         margin-bottom: 60px;
-        border-bottom: 1px solid $color_text_gold;
-        border-width: 30%;
+        border-bottom: 2px solid $color_text_gold;
         align-self: center;
     }
     &__row-top {
