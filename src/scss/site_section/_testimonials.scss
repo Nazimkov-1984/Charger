@@ -4,7 +4,7 @@ $styles : testimonials;
     @include flex (space-between, center, row);
     padding-top: 374px;
     padding-bottom: 220px;
-    background: url(/img/testimonials/background.png) no-repeat center center;
+    background: url(../img/testimonials/background.png) no-repeat center center;
     background-size: cover;
     
     &__text{
