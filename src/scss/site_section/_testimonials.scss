@@ -1,31 +1,35 @@
 $styles : testimonials;
 .#{$styles} {
     position: relative;
-    @include flex (space-between, center, row);
-    padding-top: 374px;
-    padding-bottom: 220px;
+    @include flex (space-around, center, row);
+    padding-top: 150px;
+    padding-bottom: 150px;
     background: url(../img/testimonials/background.png) no-repeat center center;
     background-size: cover;
-    
+    &__vertical-text {
+        position: relative;
+        z-index: 5;
+    }
     &__text{
         position: relative;
         z-index: 5;
-        @include text ($H600, 400, $color_text_white);
+        @include text ($H400, 400, $color_text_white);
         font-family: $Playfair_display; 
         font-style: italic;
-        margin-bottom: 31px;
+        margin-bottom: 32px;
         text-align: center;
     }
     &__title{
+        display: inline-block;
         position: relative;
         z-index: 5;
-        @include text ($H850, 400, $color_text_white);
+        @include text ($H600, 400, $color_text_white);
         font-family: $Proxima_nova; 
-        border-bottom: 2px solid $color_text_gold;
+        border-top: 2px solid $color_text_gold;
         text-transform: uppercase;
-        padding-top: 35px;
         text-align: center;
-        margin-bottom: 19px;
+        padding-top: 31px;
+        margin-bottom: 12px;
     }
     &__subtitle {
         position: relative;
@@ -34,15 +38,33 @@ $styles : testimonials;
         font-family: $Proxima_nova; 
 
     }
+    &__slider{
+        @include flex (center, center, row);
+        flex-basis: 50%;
+    }
+    &__slider__arrow{
+        position: relative;
+        z-index: 5;
+    }
+    @media (min-width: 960px) {
+        &__slider__arrow {
+    cursor: pointer;
+    }
+    }
+    &__slider-items__item {
+        @include flex (center, center, column);
+        padding: 0px 20px 0px 20px;
+    }
 }
-.testimonials:after {
+
+.testimonials:after {//затемнение фоновой картинки 
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0,0,0,.8);
+        background: rgba(0,0,0,.9);
         z-index: 2;
     
 }

@@ -9,7 +9,7 @@ $styles : servises;
        
     }
     &__row-wrapper-top {
-        @include flex(space-evenly, center, row);
+        @include flex(space-around, center, row);
       margin-bottom: 54px;
     
     }
@@ -22,17 +22,19 @@ $styles : servises;
         @include text ($H600, 400, $color_text_white);
         font-family: $Playfair_display; 
     }
-    &__link-more-top {
-        flex-basis: 20%;
-    }
     //card style 
     &__tab__item {
         position: relative;
         @include flex (center, center, column);
-        border: 1px solid $color_text_gold;
         padding: 76px 52px 57px 52px;
         margin-right: 25px;
         width: 100%;  
+        min-height: 375px;;
+    }
+    @media (min-width: 960px) {
+        &__tab__item:hover {
+        cursor: pointer;        
+    }
     }
     &__tab__item:last-child{
         margin-right: 0px;
@@ -61,7 +63,6 @@ $styles : servises;
         @include text($H520, 400, $color_text_white);
         font-family: $Proxima_nova;
         padding-bottom: 16px;
-        border-bottom: 2px solid $color_text_gold;
         display: inline-block;
         margin-bottom: 22px;
         text-align: center;
@@ -83,3 +84,12 @@ $styles : servises;
     }
     //end card style
 }
+
+.active {
+    outline: 1px solid $color_text_gold;
+    outline-offset: -20px;
+}
+.active_title {
+    border-bottom: 2px solid $color_text_gold;
+    
+} 

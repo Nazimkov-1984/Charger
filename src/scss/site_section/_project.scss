@@ -77,6 +77,15 @@ $styles : project;
         background: url(../img/projects/9.png) no-repeat center center;
         background-size: cover;
     }
+   &__row-bottom__items, &__row-top__items {
+       transition: all 1s;
+   }
+   &__row-bottom__items:hover {
+    transform: scale(1.2);  
+ }
+ &__row-top__items:hover {
+    transform: scale(1.2);  
+ }
     &__button {
         align-self: center;
     }
