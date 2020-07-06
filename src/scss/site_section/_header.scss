@@ -1,6 +1,6 @@
 $styles :header;
 .#{$styles} {
-    @include flex  (space-between, center, row);
+    @include flex  (space-around, center, row);
     background-color: #110d0c;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -23,13 +23,11 @@ $styles :header;
     }
    &__logo__img {
        margin-right: 10px;
-       padding-left: 42px;
    }
    &__menu__title {
     @include text ( $H50, 400, $color_text_white);
     font-family: $Proxima_nova;
     text-transform: uppercase;
-    padding-right: 48px;
    }
    &__menu {
        @include flex (center, center, row);

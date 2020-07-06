@@ -1,11 +1,15 @@
 $styles : testimonials;
 .#{$styles} {
+    position: relative;
     @include flex (space-between, center, row);
     padding-top: 374px;
     padding-bottom: 220px;
     background: url(/img/testimonials/background.png) no-repeat center center;
     background-size: cover;
+    
     &__text{
+        position: relative;
+        z-index: 5;
         @include text ($H600, 400, $color_text_white);
         font-family: $Playfair_display; 
         font-style: italic;
@@ -13,6 +17,8 @@ $styles : testimonials;
         text-align: center;
     }
     &__title{
+        position: relative;
+        z-index: 5;
         @include text ($H850, 400, $color_text_white);
         font-family: $Proxima_nova; 
         border-bottom: 2px solid $color_text_gold;
@@ -22,9 +28,21 @@ $styles : testimonials;
         margin-bottom: 19px;
     }
     &__subtitle {
+        position: relative;
+        z-index: 5;
         @include text ($H200, 400, $color_text_white);
         font-family: $Proxima_nova; 
 
     }
-
+}
+.testimonials:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.8);
+        z-index: 2;
+    
 }

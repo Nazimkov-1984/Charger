@@ -1,0 +1,26 @@
+$styles :footer;
+.#{$styles} {
+    @include flex(center, space-around, column);
+    background-color: #000000;
+    padding-top: 50px;
+    padding-bottom: 42px;
+    &__menu-wrapper{
+        @include flex (space-around, center,row);
+        margin-bottom: 42px;
+    }
+    &__copyright-wrapper {
+        @include flex (space-around, center,row);
+    }
+    &__copyright {
+        @include text ($H50, 400, $color_text_white);
+        font-family: $Proxima_nova;
+    }
+    &__disign-autor {
+        @include text ($H50, 400, $color_text_white);
+        font-family: $Proxima_nova;
+    }
+    &__disign-autor__name{
+        @include text ($H50, bold, $color_text_white);
+        font-family: $Proxima_nova; 
+    }
+}

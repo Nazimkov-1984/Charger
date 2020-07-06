@@ -1,0 +1,32 @@
+$styles :charger;
+.#{$styles} {
+    @include flex (space-around, center, row);
+    padding-top: 114px;
+    padding-bottom: 120px;
+    
+    &__image-wrapper {
+        background: url(/img/charger/bg.png) no-repeat center center;
+        background-size: cover;
+        flex-basis: 50%;
+        min-height: 535px;
+        margin-right: 92px;
+    }
+    &__text-wrapper {
+        @include flex (center, center, column);
+        flex-basis: 30%;
+    }
+    &__title {
+        @include text ($H600, 400, $color_text_black);
+        font-family: $Playfair_display; 
+        border-bottom: 2px solid $color_text_gold;
+        margin-bottom: 56px;
+    }
+    &__text {
+        @include text ($H100, 400, $color_text_black);
+        font-family: $Proxima_nova; 
+        margin-bottom: 39px;
+    }
+    &__button {
+        align-self: flex-start;
+    }
+}
