@@ -93,3 +93,36 @@ showSlide(slideIndex);
 
         });        
     } // end burger menu
+
+    const offset = 100;
+    const scrollUp = document.querySelector('.main-screen__scroll-up');
+    const scrollUpSvgPath = document.querySelector('.main-screen__scroll-up__svg-path');
+    const pathLength = scrollUpSvgPath.getTotalLength();
+    const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
+
+    scrollUpSvgPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+    scrollUpSvgPath.style.transition = 'stroke-dashoffset 20ms';
+
+    // update dash offset
+    const updateDashOffset = () => {
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        const dashoffset = pathLength - (getTop()*pathLength/height);
+        scrollUpSvgPath.style.strokeDashoffset = dashoffset;
+    };
+    //onscroll
+    window.addEventListener('scroll', () => {
+        updateDashOffset();
+        if ( getTop() > offset) {
+            scrollUp.classList.add('main-screen__scroll-up--active');
+        } else {
+            scrollUp.classList.remove('main-screen__scroll-up--active');  
+        }
+            });
+    //clik
+    scrollUp.addEventListener('click', () => {
+    window.scrollTo ({
+    top:0,
+    behavior: 'smooth'
+        });
+    });
+    updateDashOffset();
