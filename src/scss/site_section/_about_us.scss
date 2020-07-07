@@ -31,7 +31,13 @@ $styles :about-us;
       background: url(../img/about_us/about.png) no-repeat center center;
       background-size: cover;
       margin-right: 90px;
+      transition: all .7s;
   }
+  @media (min-width: 960px) {
+    &__image-wrapper:hover {
+        transform: scale(1.2);
+    }
+}
   &__text-wrapper {
       width: 360px;
   }

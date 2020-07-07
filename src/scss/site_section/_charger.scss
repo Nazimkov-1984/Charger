@@ -1,15 +1,21 @@
 $styles :charger;
 .#{$styles} {
-    @include flex (space-around, center, row);
+    @include flex (center, center, row);
     padding-top: 114px;
     padding-bottom: 120px;
     
     &__image-wrapper {
         background: url(../img/charger/bg.png) no-repeat center center;
         background-size: cover;
-        flex-basis: 50%;
-        min-height: 535px;
+        flex-basis: 30%;
+        min-height: 525px;
         margin-right: 92px;
+        transition: all .7s;
+    }
+    @media (min-width: 960px) {
+        &__image-wrapper:hover {
+            transform: scale(1.2);
+        }
     }
     &__text-wrapper {
         @include flex (center, center, column);
