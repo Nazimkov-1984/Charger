@@ -18,9 +18,21 @@ $styles : servises;
         
     }
     &__title {
+        position: relative;
         @include flex (center,center,row);
         @include text ($H600, 400, $color_text_white);
         font-family: $Playfair_display; 
+    }
+    &__title:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+        height: 2px;
+        background-color: $color_line;
+        right: 0;
+        display :block;
     }
     //card style 
     &__tab__item {

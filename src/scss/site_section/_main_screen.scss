@@ -37,7 +37,7 @@ $styles : main-screen;
         display: inline-block;
     }
     &__social-link {
-               @include flex (start, center, row);
+         @include flex (flex-start, center, row);
     }
     &__social-link__items {
         z-index: 10;

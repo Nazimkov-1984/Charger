@@ -1,11 +1,24 @@
 $styles :about-us;
 .#{$styles} {
     @include flex (center, center, row);
-    padding: 86px 62px 86px 90px;
+    padding: 86px 0px 86px 0px;
     &__title {
+        position: relative;
         @include text ($H600, 400, $color_text_black);
         font-family: $Playfair_display;
         margin-bottom: 24px;
+        padding-bottom: 20px;
+    }
+    &__title:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 10%;
+        height: 2px;
+        background-color: $color_line;
+        right: 0;
+        display :block;
     }
     &__subtitle {
         @include text ($H100, 400, $color_text_black);
@@ -21,9 +34,6 @@ $styles :about-us;
   }
   &__text-wrapper {
       width: 360px;
-  }
-  &__decor-wrapper {
-      width: 33%;
   }
 }
 .button__about-us {

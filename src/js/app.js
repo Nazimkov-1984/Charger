@@ -72,3 +72,24 @@ showSlide(slideIndex);
             plusSlides(1);
         });
         // end slider
+
+        //burger 
+
+    const burgerMenu = document.querySelector('.header__menu'),
+            menuItem = document.querySelector ('.navigation__menu-burger');
+ showMenu ();
+    function showMenu() {
+        burgerMenu.addEventListener('click', () => {
+           const styleMenu = window.getComputedStyle(menuItem);
+
+           if (styleMenu.display === 'none') {
+               menuItem.style.display = 'block';
+           }else {
+            menuItem.style.display = 'none';
+           }
+        });
+        menuItem.addEventListener('click', () => {
+            menuItem.style.display = 'none';
+
+        });        
+    } // end burger menu

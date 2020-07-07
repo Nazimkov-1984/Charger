@@ -16,10 +16,22 @@ $styles :charger;
         flex-basis: 30%;
     }
     &__title {
+        position: relative;
         @include text ($H600, 400, $color_text_black);
         font-family: $Playfair_display; 
-        border-bottom: 2px solid $color_text_gold;
         margin-bottom: 56px;
+        align-self: flex-start;
+    }
+    &__title:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        height: 2px;
+        background-color: $color_line;
+        right: 0;
+        display :block;
     }
     &__text {
         @include text ($H100, 400, $color_text_black);

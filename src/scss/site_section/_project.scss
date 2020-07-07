@@ -4,11 +4,25 @@ $styles : project;
     padding-top: 180px;
     padding-bottom: 114px;
     &__title {
+        position: relative;
         @include text ($H600, 400, $color_text_black);
         font-family: $Playfair_display; 
         margin-bottom: 60px;
-        border-bottom: 2px solid $color_text_gold;
         align-self: center;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    &__title:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+        height: 2px;
+        background-color: $color_line;
+        right: 0;
+        display :block;
+        margin: 0 auto;
     }
     &__row-top {
         @include flex (space-between, flex-end, row);
