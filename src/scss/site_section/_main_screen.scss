@@ -89,4 +89,30 @@ $styles : main-screen;
     stroke-width: 4px;
     transition: .2s;
     }
+    @media (max-width: 375px) {
+    &__title{
+        text-align: center;
+        font-size: $H700;
+        width: 100%;
+    }
+}
+    @media (max-width: 375px) {
+        &__subtitle{
+            text-align: center;
+            width: 100%;
+            color: $color_text_gold
+        }
+    }
+    @media (max-width: 375px) {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @media (max-width: 375px) {
+        &__media-video {
+            display: none;
+        }
+    }
 }

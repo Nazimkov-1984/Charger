@@ -34,13 +34,13 @@ $styles :header;
    &__menu {
        @include flex (center, center, row);
    }
-   @media (min-width: 960px) {
+   @media (min-width: 992px) {
     &__menu:hover {
         cursor: pointer;
         color: $color_line;
     }
 }
-@media (min-width: 960px) {
+@media (min-width: 992px) {
     &__menu__title:hover {
         cursor: pointer;
         color: $color_line;
