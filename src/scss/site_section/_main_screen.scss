@@ -115,4 +115,9 @@ $styles : main-screen;
             display: none;
         }
     }
+    @media (max-width:375px){
+        &__link-more{
+            margin-bottom: 50px;
+        }
+    }
 }

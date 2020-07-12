@@ -26,3 +26,8 @@
 .vertical-text:before {
     margin-right: -250%;
 }
+@media (max-width: 375px) {
+    .vertical-text {
+        display: none;
+    }
+}
