@@ -42,6 +42,11 @@ $styles : testimonials;
         @include flex (center, center, row);
         flex-basis: 50%;
     }
+    @media (max-width: 375px) {
+        &__slider{
+            flex-basis: 100%;
+        }   
+    }
     &__slider__arrow{
         position: relative;
         z-index: 5;
