@@ -5,20 +5,28 @@ $styles : servises;
     padding-top: 117px;
    
     &__row-wrapper {
-        @include flex(space-around, center, row);
-       
+        @include flex(space-around, center, row);  
     }
     &__row-wrapper-top {
         @include flex(space-around, center, row);
-      margin-bottom: 54px;
-    
+        margin-bottom: 54px;
     }
-
+    @media (max-width: 375px){
+        &__row-wrapper-top {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     &__tab {
         position: relative;
         top: 70px;
-        @include flex (center, stretch, row);
-        
+        @include flex (center, stretch, row);  
+    }
+    @media (max-width: 375px){
+        &__tab {
+            flex-direction: column;
+            align-items:center
+        }
     }
     &__title {
         position: relative;
@@ -26,6 +34,11 @@ $styles : servises;
         @include text ($H600, 400, $color_text_white);
         font-family: $Playfair_display; 
         z-index: 5;
+    }
+    @media (max-width:375px){
+        &__title{
+            margin-bottom: 50px;
+        }
     }
     &__title:after {
         content: "";

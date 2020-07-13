@@ -29,14 +29,27 @@ $styles : project;
         flex-wrap: nowrap;
         margin-bottom: 56px;
     }
+    @media (max-width:375px){
+        &__row-top{
+            flex-direction: column;
+            align-items: center;
+        }  
+    }
+    @media (max-width:374px){
+        &__row-bottom {
+         flex-direction: column;   
+         align-items: center;
+        }  
+    }
     &__row-bottom {
         @include flex (space-between, flex-start, row);
         flex-wrap: nowrap;
-         margin-bottom: 60px;
+        margin-bottom: 60px;
+    }
     &__image-wrapper{
         @include flex(space-between, center, column);
     }
-    } // картинки верхнего ряда
+     // картинки верхнего ряда
     &__row-top__items:nth-child(1) {
         min-width: 200px;
         min-height: 139px;
