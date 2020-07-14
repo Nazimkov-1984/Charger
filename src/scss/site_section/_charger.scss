@@ -17,7 +17,7 @@ $styles :charger;
             transform: scale(1.2);
         }
     }
-    @media (max-width: 375px){
+    @media (max-width: 375px),(max-width: 768px){
         &__image-wrapper {
            width: 100%;
             margin-right: 0px;
@@ -35,7 +35,7 @@ $styles :charger;
         margin-bottom: 56px;
         align-self: flex-start;
     }
-    @media (max-width: 375px){
+    @media (max-width: 375px),(max-width: 768px){
         &__title {
             align-self: center;
         }   
@@ -56,7 +56,7 @@ $styles :charger;
         font-family: $Proxima_nova; 
         margin-bottom: 39px;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 375px),(max-width: 768px) {
         &__text {
             align-self: center;
             text-align: center;
@@ -65,13 +65,13 @@ $styles :charger;
     &__button {
         align-self: flex-start;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 375px),(max-width: 768px) {
         &__button  {
             align-self: center;
         }
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px),(max-width: 768px) {
     .charger {
         flex-direction: column;
     }
