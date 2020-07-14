@@ -44,9 +44,16 @@ $styles : main-screen;
         @include text ($H50, 400, $color_text_white);
         font-family: $Proxima_nova;
         margin-right: 10px;
+        transition: all .7s;
     }
     &__social-link__items:last-child {
         margin-right: 0px;
+    }
+    @media (min-width: 992px) {
+        &__social-link__items:hover {
+            color:$color_text_gold;
+            cursor: pointer;
+        }
     }
     &__scroll-up{
         position: fixed;
@@ -89,35 +96,37 @@ $styles : main-screen;
     stroke-width: 4px;
     transition: .2s;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 375px),(max-width: 768px) {
     &__title{
         text-align: center;
         font-size: $H700;
         width: 100%;
     }
 }
-    @media (max-width: 375px) {
+    @media (max-width: 375px),(max-width: 768px) {
         &__subtitle{
             text-align: center;
             width: 100%;
             color: $color_text_gold
         }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 375px),(max-width: 768px) {
         &__content {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 375px),(max-width: 768px) {
         &__media-video {
             display: none;
         }
     }
-    @media (max-width:375px){
+    @media (max-width:375px),(max-width: 768px){
         &__link-more{
             margin-bottom: 50px;
         }
     }
+
+  
 }
