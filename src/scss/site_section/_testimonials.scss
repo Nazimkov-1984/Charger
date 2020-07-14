@@ -40,7 +40,7 @@ $styles : testimonials;
     }
     &__slider{
         @include flex (center, center, row);
-        flex-basis: 50%;
+        flex-basis: 70%;
     }
     @media (max-width: 375px),(max-width:768px) {
         &__slider{
