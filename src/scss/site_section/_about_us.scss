@@ -41,13 +41,13 @@ $styles :about-us;
   &__text-wrapper {
       width: 360px;
   }
-@media(max-width: 375px){
+@media(max-width: 375px), (max-width: 768px){
     &__image-wrapper{
         width: 375px;
         margin-right: 0px;
     }
 }
-@media(max-width: 375px){
+@media(max-width: 375px), (max-width: 768px){
     &__text-wrapper{
         @include flex(center, center, column);
     }
@@ -56,12 +56,12 @@ $styles :about-us;
 .button__about-us {
     margin-bottom: 100px;
 }
-@media (max-width: 375px) {
+@media (max-width: 375px), (max-width: 768px) {
     .about-us{
         flex-direction: column;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px), (max-width: 768px) {
     .button__about-us{
         display: flex;
         justify-content: center;

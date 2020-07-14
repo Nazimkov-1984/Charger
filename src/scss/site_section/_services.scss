@@ -11,7 +11,7 @@ $styles : servises;
         @include flex(space-around, center, row);
         margin-bottom: 54px;
     }
-    @media (max-width: 375px){
+    @media (max-width: 375px), (max-width: 768px){
         &__row-wrapper-top {
             flex-direction: column;
             align-items: center;
@@ -22,7 +22,7 @@ $styles : servises;
         top: 70px;
         @include flex (center, stretch, row);  
     }
-    @media (max-width: 375px){
+    @media (max-width: 375px), (max-width: 768px){
         &__tab {
             flex-direction: column;
             align-items:center
@@ -35,7 +35,7 @@ $styles : servises;
         font-family: $Playfair_display; 
         z-index: 5;
     }
-    @media (max-width:375px){
+    @media (max-width:375px), (max-width: 768px){
         &__title{
             margin-bottom: 50px;
         }
