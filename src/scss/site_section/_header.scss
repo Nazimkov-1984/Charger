@@ -62,6 +62,12 @@ $styles :header;
     left:85%;
     display: none;
 }
+@media (max-width:375px),(max-width:768px){
+    .navigation__menu-burger {
+        left:50%;
+  
+    }    
+}
 .navigation__items-burger {
     margin-bottom: 10px;
 }
