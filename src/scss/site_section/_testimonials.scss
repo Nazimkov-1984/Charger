@@ -42,7 +42,7 @@ $styles : testimonials;
         @include flex (center, center, row);
         flex-basis: 50%;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 375px),(max-width:768px) {
         &__slider{
             flex-basis: 100%;
         }   
