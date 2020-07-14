@@ -8,6 +8,7 @@
 		url('../assets/fonts/ProximaNova-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: optional;
 }
 @font-face {
 	font-family: 'Playfair Display';
@@ -18,6 +19,8 @@
 		url('../assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
+	font-display: optional;
+
 }
 @font-face {
 	font-family: 'Playfair Display';
@@ -28,6 +31,8 @@
 		url('../assets/fonts/PlayfairDisplay-Italic.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
+	font-display: optional;
+
 }
 @import "vars";
 @import "mixins";

@@ -1,4 +1,5 @@
 .button {
+    font-family: $Proxima_nova;
     @include text ($H200, 400, $color_text_black);
     text-decoration: none;
    padding: 10px 64px 10px 64px;

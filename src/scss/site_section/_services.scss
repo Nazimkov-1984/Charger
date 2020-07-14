@@ -1,7 +1,7 @@
 $styles : servises;
 .#{$styles} {
     position: relative;
-    background: url(../img/services/bgimage.png) no-repeat center center;
+    background: url(../img/services/bgimage.jpg) no-repeat center center;
     padding-top: 117px;
    
     &__row-wrapper {
@@ -82,15 +82,15 @@ $styles : servises;
     }
     &__tab__item:last-child{
         margin-right: 0px;
-        background: url(../img/services/igor-ovsyannykov-267661@1X.png) no-repeat center center;
+        background: url(../img/services/igor-ovsyannykov-267661@1X.jpg) no-repeat center center;
         background-size: cover;
     }
     &__tab__item:first-child{
-        background: url(../img/services/trevor-bobyk-422783@1X.png) no-repeat center center;
+        background: url(../img/services/trevor-bobyk-422783@1X.jpg) no-repeat center center;
         background-size: cover;
     }
     &__tab__item:nth-child(2){
-        background: url(../img/services/semen-borisov-361522@1X.png) no-repeat;
+        background: url(../img/services/semen-borisov-361522@1X.jpg) no-repeat;
         background-size: cover;
     }
     

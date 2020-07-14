@@ -4,7 +4,7 @@ $styles : testimonials;
     @include flex (space-around, center, row);
     padding-top: 150px;
     padding-bottom: 150px;
-    background: url(../img/testimonials/background.png) no-repeat center center;
+    background: url(../img/testimonials/background.jpg) no-repeat center center;
     background-size: cover;
     &__vertical-text {
         position: relative;
