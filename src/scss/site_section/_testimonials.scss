@@ -59,6 +59,7 @@ $styles : testimonials;
     &__slider-items__item {
         @include flex (center, center, column);
         padding: 0px 20px 0px 20px;
+        transition: all .8s;
     }
 }
 

@@ -48,6 +48,7 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 let slideIndex = 1;
 
+
 showSlide(slideIndex);
 
         function showSlide (n) {
@@ -57,19 +58,18 @@ showSlide(slideIndex);
             if (n<1) {
                 slideIndex = sliders.length;
             }
-            sliders.forEach (item => item.style.display = 'none' );
+            sliders.forEach (item => item.style.display = 'none');
 
             sliders[slideIndex-1].style.display = '';
         }
-
         function plusSlides(n) {
-            showSlide(slideIndex +=n);
+         showSlide(slideIndex +=n);
         }
         prev.addEventListener ('click', () => {
-            plusSlides(-1);
+           plusSlides(-1);
         });
         next.addEventListener ('click', () => {
-            plusSlides(1);
+          plusSlides(1);
         });
         // end slider
 
