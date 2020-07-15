@@ -126,3 +126,24 @@ showSlide(slideIndex);
         });
     });
     updateDashOffset();
+
+    //accordeon 
+
+    const btn = document.querySelector('.charger__accordeon'),
+         txt =  document.querySelector('.charger__text'),
+         styleBtn = window.getComputedStyle(btn),
+         styleTxt = window.getComputedStyle(txt);
+
+         btn.addEventListener('click',() => {
+            txt.classList.toggle('charger__text--active');
+            if (styleBtn.marginBottom === '0px') {
+                btn.style.marginBottom = '239px'; 
+            }else {
+                btn.style.marginBottom = '0px';
+            }
+            if (styleTxt.marginBottom === '0px') {
+                txt.style.marginBottom = '20px'; 
+            }else {
+                txt.style.marginBottom = '0px';
+            }
+         });

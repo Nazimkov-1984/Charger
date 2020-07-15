@@ -51,10 +51,35 @@ $styles :charger;
         right: 0;
         display :block;
     }
+    &__accordeon {
+        border: none;
+        background-color: #fff;
+        @include text ($H100, 400, $color_text_black);
+        font-family: $Proxima_nova; 
+        text-align: left;
+        transition: all .8s;
+        outline: none;
+        margin-bottom: 239px;
+    }
+    &__accordeon:after {
+        position: relative;
+        content:"\25BC";
+        left: 115px;
+    }
+    @media (min-width: 960px) {
+        &__accordeon:hover {
+            cursor: pointer;
+            background-color: $color_line;
+        }
+    }
     &__text {
         @include text ($H100, 400, $color_text_black);
         font-family: $Proxima_nova; 
-        margin-bottom: 39px;
+        display: none;
+        
+    }
+    &__text--active {
+        display: block;
     }
     @media (max-width: 375px),(max-width: 768px) {
         &__text {
