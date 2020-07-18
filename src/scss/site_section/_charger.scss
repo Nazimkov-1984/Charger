@@ -56,7 +56,7 @@ $styles :charger;
         background-color: #fff;
         @include text ($H100, 400, $color_text_black);
         font-family: $Proxima_nova; 
-        text-align: left;
+        text-align: center;
         transition: all .8s;
         outline: none;
         margin-bottom: 239px;
@@ -64,7 +64,7 @@ $styles :charger;
     &__accordeon:after {
         position: relative;
         content:"\25BC";
-        left: 115px;
+        left: 100px;
     }
     @media (min-width: 960px) {
         &__accordeon:hover {
