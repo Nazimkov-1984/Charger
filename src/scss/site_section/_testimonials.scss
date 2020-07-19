@@ -13,7 +13,7 @@ $styles : testimonials;
     &__text{
         position: relative;
         z-index: 5;
-        @include text ($H400, 400, $color_text_white);
+        @include text ($H400, 400, var(--color_text_white));
         font-family: $Playfair_display; 
         font-style: italic;
         margin-bottom: 32px;
@@ -23,7 +23,7 @@ $styles : testimonials;
         display: inline-block;
         position: relative;
         z-index: 5;
-        @include text ($H600, 400, $color_text_white);
+        @include text ($H600, 400, var(--color_text_white));
         font-family: $Proxima_nova; 
         border-top: 2px solid $color_border;
         text-transform: uppercase;
@@ -34,7 +34,7 @@ $styles : testimonials;
     &__subtitle {
         position: relative;
         z-index: 5;
-        @include text ($H200, 400, $color_text_white);
+        @include text ($H200, 400, var(--color_text_white));
         font-family: $Proxima_nova; 
 
     }
@@ -70,6 +70,6 @@ $styles : testimonials;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0,0,0,.9);
+        background: var(--bacground_color_testimonials);
         z-index: 2;
 }

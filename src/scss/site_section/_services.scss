@@ -31,7 +31,7 @@ $styles : servises;
     &__title {
         position: relative;
         @include flex (center,center,row);
-        @include text ($H600, 400, $color_text_white);
+        @include text ($H600, 400, var(--color_text_white));
         font-family: $Playfair_display; 
         z-index: 5;
     }
@@ -72,7 +72,7 @@ $styles : servises;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0,0,0,.6);
+        background: var(--background_color_darken_card);
         z-index: 2;
 }
     @media (min-width: 960px) {
@@ -127,7 +127,7 @@ $styles : servises;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,.9);
+    background: var(--background_color_darken);
     z-index: 1;
 }
 
