@@ -155,11 +155,14 @@ showSlide(slideIndex);
 
 if (localStorage.getItem('isChecked') === 'true') {
     checkbox.checked = true;
-    root.style.setProperty('--background_color_darken', 'rgba(0,0,0,.1)');
+    root.style.setProperty('--background_color_testimonials', 'rgba(219,215,215,.8)');
+    root.style.setProperty('--background_color_darken', 'rgba(219,215,215,.8)');
     root.style.setProperty('--color_text_white', '#000000');
     root.style.setProperty('--background_color', '#FFFFFF');  
 }else {
     checkbox.checked = false;
+    root.style.setProperty('--background_color_testimonials', 'rgba(0,0,0,.9)');
+    root.style.setProperty('--background_color_darken', 'rgba(0,0,0,.9)');
     root.style.setProperty('--color_text_white', '#FFFFFF');
     root.style.setProperty('--background_color', '#110d0c');
 }
@@ -175,7 +178,7 @@ if (localStorage.getItem('isChecked') === 'true') {
             } else {
                 localStorage.setItem('isChecked', true);
                 root.style.setProperty('--background_color_testimonials', 'rgba(219,215,215,.8)');
-                root.style.setProperty('--background_color_darken', 'rgba(0,0,0,.1)');
+                root.style.setProperty('--background_color_darken', 'rgba(219,215,215,.8)');
                 root.style.setProperty('--color_text_white', '#000000');
                 root.style.setProperty('--background_color', '#FFFFFF');
             }
