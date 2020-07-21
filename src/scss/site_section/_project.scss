@@ -10,7 +10,7 @@ $styles : project;
         margin-bottom: 60px;
         align-self: center;
         text-align: center;
-        padding-bottom: 5px;
+        padding-bottom: 20px;
     }
     &__title:after {
         content: "";
@@ -43,7 +43,7 @@ $styles : project;
         }  
     }
     &__row-bottom {
-        @include flex (space-between, flex-end, row);
+        @include flex (space-between, flex-start, row);
         flex-wrap: nowrap;
         margin-bottom: 60px;
     }

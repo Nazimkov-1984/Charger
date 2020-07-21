@@ -8,6 +8,7 @@ $styles :about-us;
         font-family: $Playfair_display;
         margin-bottom: 24px;
         padding-bottom: 20px;
+        display :block;
     }
     &__title:after {
         content: "";
