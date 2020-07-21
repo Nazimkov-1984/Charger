@@ -27,7 +27,7 @@ $styles : project;
     &__row-top {
         @include flex (space-between, flex-end, row);
         flex-wrap: nowrap;
-        margin-bottom: 56px;
+        margin-bottom: var(--margin_row-top);
     }
     @media (max-width:375px),(max-width:768px){
         &__row-top{

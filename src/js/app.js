@@ -183,4 +183,17 @@ if (localStorage.getItem('isChecked') === 'true') {
                 root.style.setProperty('--background_color', '#FFFFFF');
             }
          });
+
+         //calculate margin PROJECT
+
+         const images = document.querySelectorAll ('.project__row-top__items'),
+                wrapper = document.querySelector ('.project__row-top');
+         let widthIm = 0, widthWievport, marg;
+
+         widthWievport = wrapper.offsetWidth;
+       images.forEach( items  => {
+        widthIm = widthIm + items.offsetWidth;
+       });
+        marg = Math.round((widthWievport-widthIm)/3);
+        root.style.setProperty('--margin_row-top', `${marg}px`);
         
