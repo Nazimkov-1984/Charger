@@ -1,0 +1,24 @@
+::-webkit-scrollbar{
+    width:14px;
+}
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: rgb(32, 28, 28);
+    background-color: rgb(32, 28, 28);
+    transition: all .7s;
+    height: 70px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #e3a062;
+    background-color: #e3a062;
+}
+::-webkit-scrollbar-track{
+    border-width:0;
+    transition: all .7s;
+}
+::-webkit-scrollbar-track:hover{
+    border: solid 2px #e3a062;
+    background-color: #eee;
+}
