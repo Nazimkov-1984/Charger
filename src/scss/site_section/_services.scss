@@ -1,7 +1,9 @@
 $styles : servises;
 .#{$styles} {
     position: relative;
-    background: url(../img/services/bgimage.jpg) no-repeat center center;
+    background: url(../img/services/bgimage.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
     padding-top: 117px;
    
     &__row-wrapper {
