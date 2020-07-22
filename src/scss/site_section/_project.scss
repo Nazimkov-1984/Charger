@@ -36,7 +36,6 @@ $styles : project;
             margin-bottom: 10px;
         }  
     }
-    
     @media (max-width:375px),(max-width:768px){
         &__row-top:last-child{
             margin-bottom: 0px;
@@ -83,6 +82,7 @@ $styles : project;
             margin-bottom: 20px;
         }
     }
+   
     // картинки нижнего ряда 
     &__row-bottom__items:nth-child(1) {
         min-width: 18px;

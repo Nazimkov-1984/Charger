@@ -190,10 +190,15 @@ if (localStorage.getItem('isChecked') === 'true') {
                 wrapper = document.querySelector ('.project__row-top');
          let widthIm = 0, widthWievport, marg;
 
-         widthWievport = wrapper.offsetWidth;
-       images.forEach( items  => {
-        widthIm = widthIm + items.offsetWidth;
-       });
-        marg = Math.round((widthWievport-widthIm)/3);
-        root.style.setProperty('--margin_row-top', `${marg}px`);
-        
+         
+        widthWievport = wrapper.offsetWidth;
+        if (widthWievport < 1919){
+            images.forEach( items  => {
+                widthIm = widthIm + items.offsetWidth;
+               });
+                marg = Math.round((widthWievport-widthIm)/3);
+                root.style.setProperty('--margin_row-top', `${marg}px`);
+        }
+       
+
+    
