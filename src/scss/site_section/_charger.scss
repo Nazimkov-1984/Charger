@@ -2,9 +2,7 @@ $styles :charger;
 .#{$styles} {
     @include flex (center, center, row);
     padding-top: 114px;
-    padding-bottom: 120px;
-    min-height: 100vh;
-    
+    padding-bottom: 120px;    
     &__image-wrapper {
         background: url(../img/charger/bg.png) no-repeat center center;
         background-size: cover;
