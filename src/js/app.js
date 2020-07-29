@@ -174,7 +174,6 @@ if (localStorage.getItem('isChecked') === 'true') {
                  root.style.setProperty('--background_color_darken', 'rgba(0,0,0,.9)');
                  root.style.setProperty('--color_text_white', '#FFFFFF');
                  root.style.setProperty('--background_color', '#110d0c');
-                 console.log('Hello');
             } else {
                 localStorage.setItem('isChecked', true);
                 root.style.setProperty('--background_color_testimonials', 'rgba(219,215,215,.8)');
